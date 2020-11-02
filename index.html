@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>This PUN Weather We're Having</h1>
+        <h3 id="current-date"></h3>
+        <h4 id="current-time"></h4>
+        <br />
+        <form class="form-inline">
+            <div class="form-group mb-2"></div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="inputtext2" class="sr-only">Password</label>
+                <input type="text" class="form-control" id="inputtext2" placeholder="Enter City Name" />
+            </div>
+            <button type="submit" class="btn btn-info mb-2">Search</button>
+            <button type="submit" class="btn btn-secondary mb-2" id="current-location">Current Location</button>
+        </form>
+        <br />
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card border-info">
+                    <div class="card-body text-center">
+                        <h2 class="card-title" id="current-city">Orlando, FL</h2>
+                        <p class="current-weather" id="current-weather">
+                            Scattered Showers 80°C
+                        </p>
+                        <img src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card border-info">
+                    <div class="card-body">
+
+                        <p class="card-text">
+                            <strong>Precipitation:</strong> 20% <br />
+                            <strong>Humidity:</strong> 72% <br />
+                            <strong>Wind:</strong> 11 mph
+                        </p>
+                        <button type="button" class="btn btn-info">Temperature</button>
+                        <button type="button" class="btn btn-info">Precipitation</button>
+                        <button type="button" class="btn btn-info">Wind</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <h3 class="randomized-pun">What falls but never hits the ground? The temperature😂</h3>
+        <div class="row">
+            <div class="col">
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-info text-center">Tuesday</div>
+                    <div class="card-body text-center">
+                        <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png">
+                    </div>
+                    <div class="card-footer bg-transparent border-info text-center">80° F | C</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-info text-center">Wednesday</div>
+                    <div class="card-body text-center">
+                        <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png">
+                    </div>
+                    <div class="card-footer bg-transparent border-info text-center">76° F | C</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-info text-center">Thursday</div>
+                    <div class="card-body text-center">
+                        <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png">
+                    </div>
+                    <div class="card-footer bg-transparent border-info text-center">80° F | C</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-info text-center">Friday</div>
+                    <div class="card-body text-center">
+                        <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png">
+                    </div>
+                    <div class="card-footer bg-transparent border-info text-center">77° F | C</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-info text-center">Saturday</div>
+                    <div class="card-body text-center">
+                        <img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png">
+                    </div>
+                    <div class="card-footer bg-transparent border-info text-center">82° F | C</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+h1,
+h3,
+h2,
+h4 {
+  text-align: center;
+  font-family: "Satisfy", cursive;
+}
+h1,
+h2 {
+  color: #650e70;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.randomized-pun {
+  padding: 2%;
+}
+.container {
+  max-width: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-style: solid;
+  border-color: #138496;
+  border-width: 1px;
+  border-radius: 10%;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+.card-header {
+  font-weight: bold;
+}
+.card-footer {
+  font-weight: bold;
+}
+
+.current-weather {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  margin-left: 10px;
+}
