@@ -1,10 +1,16 @@
-h1,
+h1 {
+  text-align: left;
+  font-family: "Satisfy", cursive;
+}
+
 h3,
 h2,
 h4 {
-  text-align: center;
-  font-family: "Satisfy", cursive;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: large;
+  text-align: left;
 }
+
 h1,
 h2 {
   color: #650e70;
@@ -38,10 +44,21 @@ h2 {
 }
 
 .current-weather {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1;
 }
 
 .btn-secondary {
   margin-left: 10px;
+}
+
+.float-left {
+  float: left;
+}
+
+#styling-current {
+  background: white;
+  border-radius: 30px;
 }

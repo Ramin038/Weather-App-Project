@@ -14,10 +14,7 @@
 
 <body>
     <div class="container">
-        <h1>This PUN Weather We're Having</h1>
-        <h3 id="current-date"></h3>
-        <h4 id="current-time"></h4>
-        <br />
+                <br />
         <form class="form-inline">
             <div class="form-group mb-2"></div>
             <div class="form-group mx-sm-3 mb-2">
@@ -28,20 +25,24 @@
             <button type="submit" class="btn btn-secondary mb-2" id="current-location">Current Location</button>
         </form>
         <br />
-        <div class="row">
+        <div class="row" id="styling-current">
             <div class="col-sm-6">
-                <div class="card border-info">
+                <div >
                     <div class="card-body text-center">
-                        <h2 class="card-title" id="current-city">Orlando, FL</h2>
+                        <h1 class="card-title" id="current-city">Orlando, FL</h1>
+                        <h3 id="current-date"></h3> 
+                        <h4 id="current-time"></h4>
+                        <h4>Scattered Showers</h4>
+                        <img src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png" class="float-left">
                         <p class="current-weather" id="current-weather">
-                            Scattered Showers 80°C
+                           80 °C |°F
                         </p>
-                        <img src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png">
+                       
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="card border-info">
+                <div >
                     <div class="card-body">
 
                         <p class="card-text">
@@ -57,7 +58,6 @@
             </div>
         </div>
         <br />
-        <h3 class="randomized-pun">What falls but never hits the ground? The temperature😂</h3>
         <div class="row">
             <div class="col">
                 <div class="card border-info mb-3" style="max-width: 18rem;">
