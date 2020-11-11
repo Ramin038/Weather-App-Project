@@ -28,7 +28,13 @@ function currentDateWeather() {
   let month = months[now.getMonth()];
   let date = now.getDate();
   let hours = now.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
   let minutes = now.getMinutes();
+   if (minutes < 10) {
+    minutes= `0${minutes}`;
+  }
 
   let currentDate = document.querySelector("#current-date");
   currentDate.innerHTML = `${day}, ${month} ${date}`;
@@ -36,6 +42,7 @@ function currentDateWeather() {
   let currentTime = document.querySelector("#current-time");
   currentTime.innerHTML = `${hours}:${minutes}`;
 }
+
 currentDateWeather();
 
 function enterCity(event) {
@@ -50,14 +57,12 @@ function enterCity(event) {
 let form = document.querySelector(".form-inline");
 form.addEventListener("submit", enterCity);
 
-//New code starts here
-
 function weather(response) {
   let city = document.querySelector("#current-city");
   city.innerHTML = response.data.name;
   let temperature = Math.round(response.data.main.temp);
   let p = document.querySelector("#current-weather");
-  p.innerHTML = `Currently ${temperature}°C`;
+  p.innerHTML = `${temperature}°C`;
 }
 
 function citySearch(city) {
