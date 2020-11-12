@@ -37,7 +37,7 @@ function currentDateWeather() {
   }
 
   let currentDate = document.querySelector("#current-date");
-  currentDate.innerHTML = `${day}, ${month} ${date}`;
+  currentDate.innerHTML = `${day}`;
 
   let currentTime = document.querySelector("#current-time");
   currentTime.innerHTML = `${hours}:${minutes}`;
@@ -72,6 +72,8 @@ function citySearch(city) {
 
   axios.get(`${apiUrl}&appid=${apiKey}`).then(weather);
 }
+
+citySearch("Orlando");
 
 function currentPosition(position) {
   let latitude = position.coords.latitude;
