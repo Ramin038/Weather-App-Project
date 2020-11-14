@@ -1,32 +1,16 @@
 let now = new Date();
 
-function currentDateWeather() {
+function currentDate() {
   let days = [
     "Sunday",
     "Monday",
     "Tuesday",
-    "Wednesay",
+    "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
   ];
   let day = days[now.getDay()];
-  let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  let month = months[now.getMonth()];
-  let date = now.getDate();
   let hours = now.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -43,13 +27,14 @@ function currentDateWeather() {
   currentTime.innerHTML = `${hours}:${minutes}`;
 }
 
-currentDateWeather();
+currentDate();
 
 function enterCity(event) {
   event.preventDefault();
   let city = document.querySelector("#current-city");
   let cityInput = document.querySelector("#inputtext2");
   city.innerHTML = cityInput.value;
+
 
   citySearch(cityInput.value);
 }
@@ -62,7 +47,14 @@ function weather(response) {
   city.innerHTML = response.data.name;
   let temperature = Math.round(response.data.main.temp);
   let p = document.querySelector("#current-weather");
-  p.innerHTML = `${temperature}°C`;
+  p.innerHTML = `${temperature}`;
+  let description = document.querySelector("#weather-description");
+  description.innerHTML = response.data.weather.description;
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = response.data.main.humidity; 
+  let windSpeed = document.querySelector("#wind-speed");
+  windSpeed.innerHTML = Math.round(response.data.main.speed)
+
 }
 
 function citySearch(city) {
@@ -91,3 +83,4 @@ function getCurrentPosition() {
 
 let locationButton = document.querySelector("#current-location");
 locationButton.addEventListener("click", getCurrentPosition);
+
