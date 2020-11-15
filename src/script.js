@@ -39,14 +39,13 @@ function enterCity(event) {
 
 function weather(response) {
 let city = document.querySelector("#current-city");
+celsiusTemperature = response.data.main.temp;
 let temperature = Math.round(celsiusTemperature);
 let p = document.querySelector("#current-weather");
 let description = document.querySelector("#weather-description");
 let humidity = document.querySelector("#humidity");  
 let windSpeed = document.querySelector("#wind-speed");
 let weatherIcon = document.querySelector("#icon");
-
-celsiusTemperature = response.data.main.temp;
 
 city.innerHTML = response.data.name;
 p.innerHTML = `${temperature}`;

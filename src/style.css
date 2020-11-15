@@ -58,6 +58,10 @@ h2 {
   margin-left: 10px;
 }
 
+.form-inline {
+  width: max-content;
+}
+
 #styling-current {
   background: white;
   border-radius: 30px;
