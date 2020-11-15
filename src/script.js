@@ -32,7 +32,7 @@ currentDate();
 function enterCity(event) {
   event.preventDefault();
   let city = document.querySelector("#current-city");
-  let cityInput = document.querySelector("#inputtext2");
+  let cityInput = document.querySelector("#cityinput");
   city.innerHTML = cityInput.value;
 
 
@@ -53,8 +53,9 @@ function weather(response) {
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = response.data.main.humidity; 
   let windSpeed = document.querySelector("#wind-speed");
-  windSpeed.innerHTML = Math.round(response.data.main.speed)
-
+  windSpeed.innerHTML = response.data.main.speed
+  let weatherIcon = document.querySelector("#icon");
+  weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 function citySearch(city) {

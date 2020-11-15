@@ -1,6 +1,8 @@
 h1 {
   text-align: left;
-  font-family: "Satisfy", cursive;
+  font-family: "Wire One", sans-serif;
+  font-size: 70px;
+  font-weight: bold;
 }
 
 h3,
@@ -25,10 +27,6 @@ h2 {
   font-size: 40px;
 }
 
-.randomized-pun {
-  padding: 2%;
-}
-
 .container {
   max-width: auto;
   padding-left: 10%;
@@ -41,11 +39,10 @@ h2 {
   border-radius: 10%;
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
-.card-header {
-  font-weight: bold;
-}
-.card-footer {
-  font-weight: bold;
+
+.card-body {
+  width: 350px;
+  background-color: rebeccapurple;
 }
 
 .current-weather {
@@ -59,12 +56,12 @@ h2 {
   margin-left: 10px;
 }
 
-.float-left {
-  float: left;
-}
-
 #styling-current {
   background: white;
   border-radius: 30px;
   border: 1px solid #138496;
+}
+
+#icon {
+  width: 150px;
 }
