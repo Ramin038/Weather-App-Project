@@ -18,28 +18,29 @@
 <body>
     <div class="container">
 
-            <form class="form-inline">
-            <div class="form-group mb-2"></div>
-            <div class="form-group mx-sm-3 mb-2">
-            <input type="text" class="form-control" id="cityinput" placeholder="Enter City Name" />
-            </div>
-            <button type="submit" class="btn btn-info mb-2">Search</button>
-            <button type="submit" class="btn btn-secondary mb-2" id="current-location">Current Location</button>
-        </form>
+            
 
         <br />
 
         <div class="row border-info" id="styling-current">
-            <div class="col-sm-6">
+            <div class="col-sm-12">
                 <div >
                     <div class="card-body">
+                        <form class="form-inline" class="float-left">
+                            <div class="form-group mb-2"></div>
+                            <div class="form-group mx-sm-3 mb-2">
+                                <input type="text" class="form-control" id="cityinput" placeholder="Enter City Name" />
+                            </div>
+                            <button type="submit" class="btn btn-info mb-2">Search</button>
+                            <button type="submit" class="btn btn-secondary mb-2" id="current-location">Current Location</button>
+                        </form>
                         <h1 id="current-city"></h1>
                         <h3 id="current-date"></h3> 
                         <h4 id="current-time"></h4>
                         <p class="weather-description" id="weather-description">Scattered Showers</p>
                         <img src="" alt="" id="icon"/>
                         <p class="current-weather" id="current-weather"></p>
-                        <span class="units"> C° | <a href="#" id="fahrenheit-link">F°</a></span> <br/>
+                        <span class="units"><a href="#" id="celsius-link"> C°</a> | <a href="#" id="fahrenheit-link">F°</a></span> <br/>
                         <strong>Humidity: </strong><span id="humidity"></span>%<br />
                         <strong>Wind: </strong><span id="wind-speed"></span> mph
                     </div>

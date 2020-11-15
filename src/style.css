@@ -43,6 +43,8 @@ h2 {
 .card-body {
   width: 350px;
   background-color: rebeccapurple;
+  display: block;
+  margin: auto;
 }
 
 .current-weather {
@@ -63,5 +65,5 @@ h2 {
 }
 
 #icon {
-  width: 150px;
+  width: 200px;
 }
