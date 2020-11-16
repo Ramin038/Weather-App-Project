@@ -1,5 +1,10 @@
+body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/003/541/original/Background.png?1605483953);
+  background-size: auto;
+}
+
 h1 {
-  text-align: left;
+  text-align: center;
   font-family: "Wire One", sans-serif;
   font-size: 70px;
   font-weight: bold;
@@ -9,48 +14,51 @@ h3,
 h4 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: large;
-  text-align: left;
   display: inline;
+}
+
+.date-time {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
 }
 
 .weather-description {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: large;
   text-align: left;
+  text-transform: capitalize;
 }
 
 h1 {
-  color: #650e70;
+  color: #070a3a;
 }
 
 h2 {
   font-size: 40px;
 }
 
-.container {
-  max-width: auto;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  border-style: solid;
-  border-color: #138496;
-  border-width: 1px;
-  border-radius: 10%;
-  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+img {
+  display: block;
+  margin: auto;
+  width: 200px;
 }
 
 .card-body {
-  width: 350px;
-  background-color: rebeccapurple;
+  width: 380px;
+  border-radius: 5%;
+  background: white;
   display: block;
   margin: auto;
+  border: 5px solid#073A37;
 }
 
 .current-weather {
   font-size: 40px;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
   line-height: 1;
 }
 
@@ -62,12 +70,6 @@ h2 {
   width: max-content;
 }
 
-#styling-current {
-  background: white;
-  border-radius: 30px;
-  border: 1px solid #138496;
-}
-
-#icon {
-  width: 200px;
+.temp-output {
+  float: left;
 }
