@@ -55,15 +55,16 @@ windSpeed.innerHTML = Math.round(response.data.wind.speed);
 weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
+
 function citySearch(city) {
   let apiKey = "ced9531a3c9d8cf110723243ec946574";
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-
   axios.get(`${apiUrl}&appid=${apiKey}`).then(weather);
+  
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+axios.get(apiUrl).then(displayForecast);
 }
-
-
 
 function currentPosition(position) {
   let latitude = position.coords.latitude;
