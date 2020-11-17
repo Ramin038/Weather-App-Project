@@ -1,12 +1,12 @@
 body {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/003/541/original/Background.png?1605483953);
+  background-image: url("../media/Background.png");
   background-size: auto;
 }
 
 h1 {
   text-align: center;
   font-family: "Wire One", sans-serif;
-  font-size: 70px;
+  font-size: 100px;
   font-weight: bold;
 }
 
@@ -72,4 +72,17 @@ img {
 
 .temp-output {
   float: left;
+}
+
+.active {
+  color: #000000;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+
+.open-source {
+  text-align: center;
 }
