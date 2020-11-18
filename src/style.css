@@ -84,3 +84,30 @@ h2 {
 .open-source {
   text-align: center;
 }
+
+.weather-forecast h3 {
+  font-family: system-ui;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
+
+.forecast-icon {
+  display: block;
+  margin: 0 auto;
+  height: 80px;
+  width: 80px;
+}
+
+.weather-forecast-temperature {
+  font-family: system-ui;
+  font-weight: normal;
+  text-align: center;
+  font-size: 15px;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
+}
