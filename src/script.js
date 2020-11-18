@@ -28,6 +28,11 @@ function currentDate() {
 
 currentDate();
 
+function formatHours(timestamp) {
+  
+  return `${hours}:${minutes}`;
+}
+
 function enterCity(event) {
   event.preventDefault();
   let city = document.querySelector("#current-city");
@@ -55,6 +60,22 @@ windSpeed.innerHTML = Math.round(response.data.wind.speed);
 weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
+function displayForecast(response) {
+let forecastElement = document.querySelector("#forecast");
+let forecast = response.data.list[0];
+console.log(forecast);
+
+forecastElement.innerHTML = `
+<div class="weather-forecast" id="forecast">
+  <div class="col-2">
+    <h3>
+      ${forecast}
+    </h3>
+      <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="forecast-icon"/>
+    <div class="weather-forecast-temperature">
+      <strong>${Math.round(forecast.main.temp_max)}°</strong> ${Math.round(forecast.main.temp_min)}°</div>
+ </div>  `
+}
 
 function citySearch(city) {
   let apiKey = "ced9531a3c9d8cf110723243ec946574";

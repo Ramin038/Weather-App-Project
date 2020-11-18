@@ -12,24 +12,21 @@ h1 {
 
 h3,
 h4 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: large;
+  font-family: system-ui;
+  font-weight: normal;
+  font-size: medium;
   display: inline;
 }
 
-.date-time {
-  text-align: center;
-}
-
 .description {
-  text-align: center;
+  text-transform: capitalize;
 }
 
-.weather-description {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: large;
-  text-align: left;
-  text-transform: capitalize;
+.additional-info {
+  font-family: system-ui;
+  font-weight: normal;
+  font-size: medium;
+  display: inline;
 }
 
 h1 {
@@ -40,7 +37,7 @@ h2 {
   font-size: 40px;
 }
 
-img {
+.current-weather-icon {
   display: block;
   margin: auto;
   width: 200px;

@@ -34,7 +34,10 @@
 
                             <h1 id="current-city"></h1>
 
-                        <div class="date-time">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="date-time">
                             <h3 id="current-date"></h3> 
                             <h4 id="current-time"></h4>
                         </div>
@@ -42,8 +45,17 @@
                         <div class="description">
                             <p class="weather-description" id="weather-description"></p>
                         </div>  
+                                    </div>
+                                    <div class="col-sm">
+                                    <div class="additional-info">
+                                        <strong>Humidity: </strong><span id="humidity"></span>%<br />
+                                        <strong>Wind: </strong><span id="wind-speed"></span> mph
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                            <img src="" alt="" id="icon"/>
+                            <img src="" alt="" id="icon" class="current-weather-icon"/>
 
                         <div class="temp-output">
                             <p class="current-weather" id="current-weather"></p>
@@ -52,20 +64,20 @@
                         <span class="units" ><a href="#" id="celsius-link" class="active"> °C</a> | <a href="#" id="fahrenheit-link" class="inactive">°F</a></span> <br/>
                    <br/>
 
-                   <div class="additional-info">
-                        <strong>Humidity: </strong><span id="humidity"></span>%<br />
-                        <strong>Wind: </strong><span id="wind-speed"></span> mph
-                    </div>
+                   
 
                     <br/>
 
                     <div class="weather-forecast" id="forecast">
                            <div class="col-2">
                                <h3>
-                                   Sun
+                                   
                                </h3>
-                               <img src=""/>
-                           </div> 
+                               <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" class="forecast-icon"/>
+                           <div class="weather-forecast-temperature">
+                               <strong> 15°</strong> 20°
+                           </div>
+                            </div> 
                             
 
                     </div>
