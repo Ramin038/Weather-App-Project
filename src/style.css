@@ -1,5 +1,5 @@
 body {
-  background-image: url("../media/Background.png");
+  background-image: url("media/Background.png");
   background-size: auto;
 }
 
@@ -40,7 +40,7 @@ h2 {
 .current-weather-icon {
   display: block;
   margin: auto;
-  width: 200px;
+  width: 150px;
 }
 
 .card-body {
@@ -85,6 +85,10 @@ h2 {
   text-align: center;
 }
 
+.weather-forecast {
+  margin-top: 10px;
+}
+
 .weather-forecast h3 {
   font-family: system-ui;
   font-weight: normal;
@@ -98,8 +102,8 @@ h2 {
 .forecast-icon {
   display: block;
   margin: 0 auto;
-  height: 80px;
-  width: 80px;
+  height: 30px;
+  width: 30px;
 }
 
 .weather-forecast-temperature {
