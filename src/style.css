@@ -40,6 +40,8 @@ h2 {
 .current-weather-icon {
   display: block;
   margin: auto;
+  margin-bottom: 15px;
+  margin-top: 10px;
   width: 150px;
 }
 
@@ -58,6 +60,7 @@ h2 {
   font-family: "Wire One", sans-serif;
   text-align: center;
   line-height: 1;
+  margin-left: 140px;
 }
 
 .btn-secondary {
