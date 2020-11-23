@@ -52,6 +52,8 @@ h2 {
   display: block;
   margin: auto;
   border: 5px solid#073A37;
+  padding-bottom: 190px;
+  padding-left: 10px;
 }
 
 .current-weather {
@@ -90,6 +92,7 @@ h2 {
 
 .weather-forecast {
   margin-top: 10px;
+  float: left;
 }
 
 .weather-forecast h3 {
